@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS字符串拼接</title>
+</head>
+<style>
+	div{width: 150px;border: 1px solid #000;float: left;margin:20px;}
+</style>
+<body id="bd">
+<!-- <div>
+	<h1>张三</h1>
+	<p>此人今年23岁</p>
+</div>
+<div>
+	<h1>李四</h1>
+	<p>此人今年24岁</p>
+</div>
+<div>
+	<h1>王五</h1>
+	<p>此人今年25岁</p>
+</div> -->
+</body>
+</html>
+<script>
+	var data = [{	
+		name:'张三',
+		age:23
+	},{
+		name:'李四',
+		age:24
+	},{
+		name:'王五',
+		age:25
+	}]
+
+	for(var i=0;i<data.length;i++){	
+		var aaa = '<div>'
+					+'<h1>'+data[i].name+'</h1>'
+					+'<p>'+data[i].age+'</p>'
+				  +'</div>'
+
+		document.getElementById('bd').innerHTML += aaa;
+	}
+</script>
+
+
+
